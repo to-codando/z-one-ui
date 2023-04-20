@@ -5,7 +5,7 @@ const template = () => html`
   <div class="wrap-ctx">
     <${AppButton} style="success">
       <slot target="content">
-        <span style="success">
+        <span style="success:filled">
           <i>me clica</i>
         </span>
       </slot>
