@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <title>FamCode UI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css"> -->
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/buble.css"> -->
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/dark.css"> -->
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/pure.css">   -->
+</head>
+
+<body>
+  <style>
+    body {
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 50vh;
+      width: 100%;
+      background: #3c07ba
+    }
+
+    .logo>p {
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: lighter;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .logo img {
+      max-width: 20rem
+    }
+  </style>
+
+  <style>
+    :root {
+      --base-background-color: #18181b;
+
+      --blockquote-background: #232327;
+      --blockquote-border-color: #383b3f;
+      --blockquote-border-radius: 8px;
+      --blockquote-border-width: 1px;
+
+      --code-theme-background: #232327;
+
+      --code-block-border-radius: 8px;
+      --code-block-padding: 0;
+
+      --code-theme-selector: #fff;
+
+      /* --code-theme-background: red; */
+      --code-theme-comment: grey;
+      --code-theme-function: #fff;
+      --code-theme-keyword: #ff8dd4;
+      --code-theme-operator: #ec9121;
+      --code-theme-punctuation: #f2d361;
+      --code-theme-selection: #6d6682;
+      --code-theme-selector: #7ac9d4;
+      --code-theme-tag: #ffffff;
+      --code-theme-text: #ffffdb;
+
+      --sidebar-background: #18181b;
+      --sidebar-border-color: #18181b;
+      --sidebar-name-color: #fff;
+      --sidebar-name-font-weight: bold;
+
+      --sidebar-nav-link-color: #ccc;
+      --sidebar-nav-link-color--active: #7ac9d4;
+      --sidebar-nav-link-color--hover: #ccc;
+
+
+      --sidebar-toggle-icon-color: #ccc;
+      --sidebar-toggle-background: #232327;
+
+      --sidebar-nav-link-border-color--hover: #ccc;
+      --sidebar-nav-link-border-color--active: #7ac9d4;
+      --sidebar-border-width: 1px;
+      --sidebar-border-color: #23212c;
+
+      --search-input-background-color: #212124;
+      --search-input-border-radius: 8px;
+      --search-input-margin: 0 0.5em;
+      --search-input-background-color--focus: none;
+
+
+
+    }
+
+    pre {
+      border: 1px #383b3f solid
+    }
+
+    input:focus {
+      box-shadow: none !important
+    }
+
+    .markdown-section pre[data-lang=js]::after,
+    .markdown-section pre[data-lang=ts]::after,
+    .markdown-section pre[data-lang=javascript]::after,
+    .markdown-section pre[data-lang=typescript]::after {
+      content: 'ts'
+    }
+
+    .search .clear-button.show {
+      position: relative;
+      top: 8px;
+      right: -5px;
+    }
+
+    .app-nav p a {
+      color: #ccc
+    }
+  </style>
+  <div id="app">
+    ...carregando
+  </div>
+
+
+
+  <script>
+    window.$docsify = {
+      name: 'FamCodeUI',
+      repo: '',
+      auto2top: true,
+      basePath: './',
+      coverpage: false,
+      executeScript: true,
+      loadSidebar: true,
+      loadNavbar: true,
+      maxLevel: 4,
+      subMaxLevel: 2,
+
+      search: {
+        noData: {
+          '/': 'Sem resultado!',
+        },
+        placeholder: {
+          '/': 'Buscar',
+        },
+      },
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/front-matter.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/disqus.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/ga.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/gitalk.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/matomo.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script> -->
+</body>
+
+</html>
