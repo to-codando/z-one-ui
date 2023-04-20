@@ -1,15 +1,74 @@
 :root {
-  --black-light: #505A59;
-  --black-power: #212C2E;
-  --black-soft: #263538;
-  --green-bluish-light: #DCF4F8;
-  --green-bright: #5DDABC;
-  --green-moss: #818B88;
-  --green-smooth: #76ADAD;
-  --green-soft: #CBF3E9;
-  --green-soft-light: #DBF4EE;
-  --green-super-light: #CCDBD7;
-  --light-grey: #EEF4F3;
-  --red-soft: #EC7B7B;
-  --white: #FFFFFF;
+  /*Color Theme*/
+
+  --blue-1: #214ed3;
+  --blue-1: #315ad2;
+  --blue-3: #4c6fd6;
+  --blue-4: #6782d4;
+  --blue-5: #8497d2;
+  --blue-6: #a4b2da;
+  --blue-7: #d4ddf5;
+
+  --red-1: #de006f;
+  --red-2: #dc388a;
+  --red-3: #de5e9e;
+  --red-4: #e385b4;
+  --red-5: #efa0c8;
+  --red-6: #eabad3;
+  --red-7: #edd4e1;
+
+  --green-1: #1de383;
+  --green-2: #67f4b0;
+  --green-3: #8cf1c0;
+  --green-4: #9cedc6;
+  --green-5: #b1eed2;
+  --green-6: #c0e7d4;
+  --green-7: #ddeee6;
+
+  --white-1: #fff;
+  --white-2: #eaf2ff;
+  --white-3: #dfe7ff;
+
+  --text: #20273c;
+  --text-soft: #4b4f5b;
+  --text-soft-light: #787c83;
+
+  --secondary: var(--blue-1);
+  --secondary-soft: var(--blue-6);
+  --secondary-soft-light: var(--blue-7);
+
+  --secondary: var(--red-1);
+  --secondary-soft: var(--red-6);
+  --secondary-soft-light: var(--red-7);
+
+  --tertiary: var(--green-1);
+  --tertiary-soft: var(--green-6);
+  --tertiary-soft-light: var(--green-7);
+
+  /*Title*/
+  --title-size-1: 3em;
+  --title-size-2: 2em;
+  --title-size-3: 1em;
+  --title-size-4: 0.875em;
+
+  --title-primary: var(--title-size-2);
+  --title-secondary: var(--title-size-3);
+  --title-tertiary: var(--title-size-1);
+
+  /*Paragraph*/
+
+  --text-size-1: 1.2em;
+  --text-size-2: 1em;
+  --text-size-3: 0.875em;
+  --text-size-4: 0.7em;
+
+  --text-primary: var(--text-size-3);
+  --text-secondary: var(--text-size-2);
+  --text-tertiary: var(--text-size-1);
+
+  /*Border*/
+
+  --border-primary: 8px;
+  --border-secondary: 16px;
+  --border-tertiary: 32px;
 }
