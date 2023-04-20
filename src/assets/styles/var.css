@@ -33,9 +33,9 @@
   --text-soft: #4b4f5b;
   --text-soft-light: #787c83;
 
-  --secondary: var(--blue-1);
-  --secondary-soft: var(--blue-6);
-  --secondary-soft-light: var(--blue-7);
+  --primary: var(--blue-1);
+  --primary-soft: var(--blue-6);
+  --primary-soft-light: var(--blue-7);
 
   --secondary: var(--red-1);
   --secondary-soft: var(--red-6);
