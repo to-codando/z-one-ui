@@ -2,7 +2,7 @@
   /*Color Theme*/
 
   --blue-1: #214ed3;
-  --blue-1: #315ad2;
+  --blue-2: #315ad2;
   --blue-3: #4c6fd6;
   --blue-4: #6782d4;
   --blue-5: #8497d2;
@@ -33,16 +33,22 @@
   --black-2: #4b4f5b;
   --blcak-3: #787c83;
 
+  --primary-dark-strong: #143187;
+  --primary-dark: #1d44ba;
   --primary: var(--blue-1);
-  --primary-soft: var(--blue-6);
-  --primary-soft-light: var(--blue-7);
+  --primary-soft: #979db0;
+  --primary-soft-light: #d8e1fb;
 
+  --secondary-dark: #c30263;
+  --secondary-dark-strong: #a00251;
   --secondary: var(--red-1);
-  --secondary-soft: var(--red-6);
+  --secondary-soft: #da91b7;
   --secondary-soft-light: var(--red-7);
 
+  --tertiary-dark: #1ac371;
+  --tertiary-dark-strong: #13ab62;
   --tertiary: var(--green-1);
-  --tertiary-soft: var(--green-6);
+  --tertiary-soft: #8cb5a1;
   --tertiary-soft-light: var(--green-7);
 
   /*Generic texts*/
