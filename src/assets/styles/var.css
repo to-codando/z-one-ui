@@ -29,9 +29,9 @@
   --white-2: #eaf2ff;
   --white-3: #dfe7ff;
 
-  --text: #20273c;
-  --text-soft: #4b4f5b;
-  --text-soft-light: #787c83;
+  --black-1: #20273c;
+  --black-2: #4b4f5b;
+  --blcak-3: #787c83;
 
   --primary: var(--blue-1);
   --primary-soft: var(--blue-6);
@@ -45,22 +45,22 @@
   --tertiary-soft: var(--green-6);
   --tertiary-soft-light: var(--green-7);
 
-  /*Title*/
-  --title-size-1: 3em;
-  --title-size-2: 2em;
-  --title-size-3: 1em;
-  --title-size-4: 0.875em;
+  /*Generic texts*/
 
-  --title-primary: var(--title-size-2);
-  --title-secondary: var(--title-size-3);
-  --title-tertiary: var(--title-size-1);
+  --text-size-1: 0.5em;
+  --text-size-2: 0.75em;
+  --text-size-3: 0.875em;
+  --text-size-4: 2em;
+  --text-size-5: 3em;
+  --text-size-6: 4em;
+
+  /*Title*/
+
+  --title-primary: var(--text-size-4);
+  --title-secondary: calc(var(--text-size-4) - 0.75em);
+  --title-tertiary: var(--title-size-3);
 
   /*Paragraph*/
-
-  --text-size-1: 1.2em;
-  --text-size-2: 1em;
-  --text-size-3: 0.875em;
-  --text-size-4: 0.7em;
 
   --text-primary: var(--text-size-3);
   --text-secondary: var(--text-size-2);
