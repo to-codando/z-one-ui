@@ -9,14 +9,14 @@ body {
   display: flex;
   width: 100%;
   height: auto;
-  min-height:100vh;
+  min-height: 100vh;
   background: var(--light-grey)
 }
 
 router-view {
-  /* display: flex;
+  display: flex;
   flex-wrap: wrap;
-  width:100%; */
+  width: 100%;
 }
 
 @media (max-width: 1080px) {

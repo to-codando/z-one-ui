@@ -1,8 +1,15 @@
 import { html, css } from "iares";
+import { AppButton } from "@/components/AppButton";
 
 const template = () => html`
   <div class="wrap-ctx">
-    <h1>Hello Word, I'm IARES!</h1>
+    <${AppButton}>
+      <slot target="content">
+        <span style="tertiary:disabled">
+          <i>me clica</i>
+        </span>
+      </slot>
+    </>
   </div>
 `;
 
@@ -14,10 +21,11 @@ export const AppHello = () => {
 };
 
 const styles = () => css`
-  app-main,
+  app-hello,
   .wrap-ctx {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 `;
