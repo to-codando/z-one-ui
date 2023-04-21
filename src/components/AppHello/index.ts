@@ -3,9 +3,9 @@ import { AppButton } from "@/components/AppButton";
 
 const template = () => html`
   <div class="wrap-ctx">
-    <${AppButton} style="success">
+    <${AppButton}>
       <slot target="content">
-        <span style="success:filled">
+        <span style="tertiary:disabled">
           <i>me clica</i>
         </span>
       </slot>
