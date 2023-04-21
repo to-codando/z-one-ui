@@ -2,7 +2,7 @@
 *::before,
 *::after,
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 100vh;
-  background: var(--light-grey)
+  background: #000;
 }
 
 router-view {

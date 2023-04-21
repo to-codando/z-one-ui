@@ -21,6 +21,7 @@ const styles = () => css`
     align-items: center;
     flex-wrap:wrap;
     width:100vw;
-    height: 100vh
+    height: 100vh;
+    padding: 0 2em;
   }
 `;
