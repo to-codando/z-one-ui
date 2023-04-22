@@ -61,7 +61,7 @@ const styles = () => css`
     border:1px solid var(--primary-soft);  
   }
 
-  fam-button *[type="secondary"] {
+  fam-button *[type="tertiary"] {
     font-size:var(--text-secondary);
     border-radius: var(--border-primary);
     color: var(--white-1);
@@ -69,7 +69,7 @@ const styles = () => css`
     border:2px solid var(--secondary-dark-strong)   
   }
 
-  fam-button *[type="secondary-hole"] {
+  fam-button *[type="tertiary-hole"] {
     font-size:var(--text-secondary);
     border-radius: var(--border-primary);
     color: var(--secondary-dark-strong);
@@ -77,7 +77,7 @@ const styles = () => css`
     border:2px solid var(--secondary-dark-strong)   
   }
 
-  fam-button *[type="secondary-disabled"] {
+  fam-button *[type="tertiary-disabled"] {
     font-size:var(--text-secondary);
     border-radius: var(--border-primary);
     color: var(--secondary-soft);
@@ -85,7 +85,7 @@ const styles = () => css`
     border:1px solid var(--secondary-soft)   
   }
 
-  fam-button *[type="secondary-hole-disabled"] {
+  fam-button *[type="tertiary-hole-disabled"] {
     font-size:var(--text-secondary);
     border-radius: var(--border-primary);
     color: var(--secondary-soft-light);
@@ -93,7 +93,7 @@ const styles = () => css`
     border:1px solid var(--secondary-soft-light);   
   }
  
-  fam-button *[type="tertiary"] {
+  fam-button *[type="secondary"] {
     font-size:var(--text-secondary);
     border-radius: var(--border-primary);
     color: var(--white-1);
@@ -101,7 +101,7 @@ const styles = () => css`
     border:2px solid var(--tertiary-dark-strong)   
   }
   
-  fam-button *[type="tertiary-hole"] {
+  fam-button *[type="secondary-hole"] {
     font-size:var(--text-secondary);
     border-radius: var(--border-primary);
     color: var(--tertiary-dark-strong);
@@ -109,7 +109,7 @@ const styles = () => css`
     border:2px solid var(--tertiary-dark-strong)   
   }
 
-  fam-button *[type="tertiary-disabled"] {
+  fam-button *[type="secondary-disabled"] {
     font-size:var(--text-secondary);
     border-radius: var(--border-primary);
     color: var(  --tertiary-soft);
@@ -117,7 +117,7 @@ const styles = () => css`
     border:1px solid var(--tertiary-soft)   
   }
 
-  fam-button *[type="tertiary-hole-disabled"] {
+  fam-button *[type="secondary-hole-disabled"] {
     font-size:var(--text-secondary);
     border-radius: var(--border-primary);
     color: var(  --tertiary-soft);
