@@ -1,11 +1,11 @@
 import { html, css } from "iares";
-import { AppButton } from "@/components/AppButton";
+import { FamButton } from "@/components/FamButton";
 
 const template = () => html`
   <div class="wrap-ctx">
-    <${AppButton}>
+    <${FamButton}>
       <slot target="content">
-        <span style="tertiary:disabled">
+        <span type="primary">
           <i>me clica</i>
         </span>
       </slot>
