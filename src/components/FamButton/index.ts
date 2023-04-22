@@ -1,14 +1,13 @@
 import { html, css } from "iares";
 
-const template = ({ props }) => html`
+const template = () => html`
   <slot id="content"></slot>
 `;
 
-export const FamButton = ({ props }) => {
+export const FamButton = () => {
   return {
     template,
     styles,
-    props,
   };
 };
 
