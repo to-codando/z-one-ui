@@ -1,11 +1,4 @@
 * [inicio](/)
 * [Outro](/outro.md)
-* [Mais um](/)
-    * [Primeiro](/)
-    * [Segundo](/)
-    * [Terceiro](/)
-* [Nova página](/nova.md)
-    * [Primeiro](/)
-    * [Segundo](/)
-    * [Terceiro](/)
-* [Novo](/)
+* Components
+    * [Botão](/fam-button.md)
