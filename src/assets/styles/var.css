@@ -92,4 +92,18 @@
   --fam-container-border-style: none;
   --fam-container-border-color: none;
   --fam-container-background: none;
+
+  /*Avatar*/
+  --fam-avatar-size-1: 1em;
+  --fam-avatar-size-2: 2em;
+  --fam-avatar-size-3: 3em;
+  --fam-avatar-size-4: 4em;
+  --fam-avatar-size-5: 5em;
+  --fam-avatar-size-6: 6em;
+  --fam-avatar-size-7: 7em;
+  --fam-avatar-size-8: 8em;
+  --fam-avatar-size-9: 9em;
+  --fam-avatar-size-10: 10em;
+  --fam-avatar-size-11: 11em;
+  --fam-avatar-size-12: 12em;
 }
