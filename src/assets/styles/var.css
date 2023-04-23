@@ -77,4 +77,7 @@
   --border-primary: 8px;
   --border-secondary: 16px;
   --border-tertiary: 32px;
+
+  /*Image fallback*/
+  --fam-image-fallback: "/assets/images/fallback-black.png";
 }
