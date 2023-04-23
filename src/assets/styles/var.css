@@ -78,6 +78,18 @@
   --border-secondary: 16px;
   --border-tertiary: 32px;
 
+  /*COMPONENTS------------------------------------------------*/
+
   /*Image fallback*/
   --fam-image-fallback: "/assets/images/fallback-black.png";
+
+  /*Container*/
+  --fam-container-max-width: 80em;
+  --fam-container-margin-left: auto;
+  --fam-container-margin-right: auto;
+  --fam-container-border-radius: 0;
+  --fam-container-border-width: 0;
+  --fam-container-border-style: none;
+  --fam-container-border-color: none;
+  --fam-container-background: none;
 }
