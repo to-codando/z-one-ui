@@ -1,15 +1,8 @@
 import { html, css } from "iares";
-import { FamButton } from "@/components/FamButton";
 
 const template = () => html`
   <div class="wrap-ctx">
-    <${FamButton}>
-      <slot target="content">
-        <span type="primary">
-          <i>me clica</i>
-        </span>
-      </slot>
-    </>
+    <p>Insert a component here</p>
   </div>
 `;
 
@@ -27,5 +20,9 @@ const styles = () => css`
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+
+  .wrap-ctx {
+    max-width: 450px;
   }
 `;
