@@ -118,6 +118,19 @@
       --strong-color: #ccc;
       --strong-font-weight: 600;
 
+      /* Tables */
+      --table-body-border-color: var(--blockquote-border-color);
+      --table-body-border-width: 1px;
+      --table-cell-border-color: var(--blockquote-border-color);
+      --table-cell-border-width: 1px;
+      --table-cell-padding: 1em;
+      --table-head-background: #232327;
+      --table-head-border-color: var(--table-cell-border-color);
+      --table-head-border-width: 1px;
+      --table-head-font-weight: var(--strong-font-weight);
+      --table-row-even-background: none;
+      --table-row-odd-background: none;
+
     }
 
     pre {
@@ -163,6 +176,22 @@
 
     .docsify-tabs--classic::before {
       border-style: none
+    }
+
+    .markdown-section tbody,
+    .markdown-section thead,
+    .markdown-section table {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+
+
+    .markdown-section tr {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      width: 100%
     }
   </style>
   <div id="app">
