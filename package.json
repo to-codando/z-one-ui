@@ -51,7 +51,7 @@
     "esbuild-copy-files-plugin": "^1.1.0",
     "esbuild-plugin-path-alias": "^1.0.7",
     "glob": "^9.2.1",
-    "global-jsdom": "^8.7.0",
+    "global-jsdom": "^8.8.0",
     "http-server": "^14.1.1",
     "install-peerdeps": "^3.0.3",
     "jsdom": "^21.1.1",
