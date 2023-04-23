@@ -24,7 +24,7 @@ describe("FamButton", () => {
     render(html`
        <${FamButton}>
           <slot target="content">
-            <span style="tertiary:disabled">
+            <span type="primary-disabled">
               Salvar
             </span>
           </slot>

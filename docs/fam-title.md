@@ -1,7 +1,7 @@
 # Fam-title
 
 
-![Componente FamTitle](/images/fam-title.png)
+![Componente FamTitle](/images/fam-title/fam-title.png)
 
 ## Definição
 
@@ -10,13 +10,11 @@ O componente de título é apenas um wrapper para o título que deve ser renderi
 Para definir um título basta fornecer para sua **literal template tag** os elementos que devem compor o título.
 
 ```js
-
-    <${FamTitle}>
-      <slot target="content">
-        <h1> Esse é um título do componente de título </h1>
-      </slot>
-    </>
-    
+  <${FamTitle}>
+    <slot target="content">
+      <h1> Esse é um título do componente de título </h1>
+    </slot>
+  </>
 ```
 
 
@@ -32,15 +30,15 @@ Atualmente existem 3 tipos de títulos suportados:
 
 * H1 - Título grande
 
-![Componente FamTitle](/images/fam-title-h1.png)
+![Componente FamTitle](/images/fam-title/fam-title-h1.png)
 
 * H2 - Título médio
 
-![Componente FamTitle](/images/fam-title-h2.png)
+![Componente FamTitle](/images/fam-title/fam-title-h2.png)
 
 * H3 - Título pequeno
 
-![Componente FamTitle](/images/fam-title-h3.png)
+![Componente FamTitle](/images/fam-title/fam-title-h3.png)
 
 
 

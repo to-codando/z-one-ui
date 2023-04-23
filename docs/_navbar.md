@@ -1,10 +1,5 @@
-* [Inicio](/outro)
-    * [Curso](/extra)
-    * [Documentação](/outro)
-    * [Componentes](/nova)
+* [Inicio](/)
+* [Mantenedores](/)
+* [Github](https://github.com/to-codando/fam-code-ui)
 
-* [Fim](/nova)
-    * [Componentes](/nova)
-    * [Documentação](/outro)
-    * [Curso](/extra)
 
