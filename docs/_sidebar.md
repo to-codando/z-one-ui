@@ -1,5 +1,5 @@
 * [inicio](/)
-* [Outro](/outro.md)
 * Components
     * [Botão](/fam-button.md)
-    * [title](/fam-title.md)
+    * [Título](/fam-title.md)
+    * [Tagline](/fam-tagline.md)

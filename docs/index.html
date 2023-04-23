@@ -65,8 +65,8 @@
       --blockquote-border-radius: 8px;
       --blockquote-border-width: 1px;
 
-      --code-theme-background: #232327;
-
+      --code-theme-background: #000;
+      --code-theme-border: 0;
       --code-block-border-radius: 8px;
       --code-block-padding: 0;
 
@@ -95,7 +95,7 @@
 
       --sidebar-toggle-icon-color: #ccc;
       --sidebar-toggle-background: #232327;
-
+      --sidebar-width: 350px;
 
 
       --sidebar-nav-link-border-color--hover: #ccc;
@@ -108,12 +108,32 @@
       --search-input-margin: 0 0.5em;
       --search-input-background-color--focus: none;
 
+      --docsifytabs-border-color: var(--blockquote-border-color);
+      --docsifytabs-tab-highlight-color: var(--sidebar-nav-link-border-color--active);
+      --docsifytabs-border-radius-px: 8px;
+      --docsifytabs-content-background: #000;
+      --docsifytabs-content-padding: 0;
 
+      /* color font  */
+      --strong-color: #ccc;
+      --strong-font-weight: 600;
 
     }
 
     pre {
-      border: 1px #383b3f solid
+      border: 1px #383b3f solid;
+    }
+
+    .docsify-tabs__content pre[data-lang] {
+      border: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      background: #001
+    }
+
+
+    .markdown-section pre[data-lang] {
+      padding: 2em
     }
 
     input:focus {
@@ -135,6 +155,14 @@
 
     .app-nav p a {
       color: #ccc
+    }
+
+    [class*="docsify-tabs--"]>.docsify-tabs__tab--active+.docsify-tabs__content {
+      border-radius: 8px
+    }
+
+    .docsify-tabs--classic::before {
+      border-style: none
     }
   </style>
   <div id="app">
@@ -164,12 +192,21 @@
           '/': 'Buscar',
         },
       },
+
+      tabs: {
+        persist: true,      // default
+        sync: true,      // default
+        theme: 'material', // default
+        tabComments: true,      // default
+        tabHeadings: true       // default
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/front-matter.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/disqus.min.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/emoji.min.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script> -->
