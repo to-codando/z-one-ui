@@ -7,3 +7,4 @@
     * [Imagem](/fam-image.md)
     * [Avatar](/fam-avatar.md)
     * [Container](/fam-container.md)
+    * [CheckBox](/fam-check-box.md)
