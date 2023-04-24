@@ -1,9 +1,15 @@
+import { HtmlInputEvent } from "./types";
+
 export type Thandler = {
-  (args: Event): void;
+  (args: HtmlInputEvent): void;
+};
+
+export type Handler = {
+  (args: HtmlInputEvent): void;
 };
 
 export type Tdebounc = {
-  (callback: Thandler, delay?: number): Thandler;
+  (callback: Thandler | Handler, delay?: number): Thandler;
 };
 
 export const debounce: Tdebounc = (callback, delay = 500) => {
