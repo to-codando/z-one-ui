@@ -5,4 +5,6 @@
     * [Tagline](/fam-tagline.md)
     * [Tooltip](/fam-tooltip.md)
     * [Imagem](/fam-image.md)
+    * [Avatar](/fam-avatar.md)
+    * [Container](/fam-container.md)
     * [CheckBox](/fam-check-box.md)
