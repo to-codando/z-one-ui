@@ -6,3 +6,7 @@
     * [Tooltip](/fam-tooltip.md)
     * [Divider](/fam-divider.md)
     * [Imagem](/fam-image.md)
+    * [Avatar](/fam-avatar.md)
+    * [Container](/fam-container.md)
+    * [Campo de texto](/fam-text-input.md)
+    * [CheckBox](/fam-check-box.md)

@@ -9,3 +9,7 @@ export type HooksType<T extends Object> = T;
 export type TemplateParamsType<T extends Object> = T;
 export type TemplateStateType<T extends Object> = T;
 export type StateType<T extends Object> = TState<T>;
+
+export type HtmlInputEvent = Event & {
+  target: HTMLInputElement;
+};
