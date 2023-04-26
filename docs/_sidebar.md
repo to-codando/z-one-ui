@@ -9,4 +9,5 @@
     * [Avatar](/fam-avatar.md)
     * [Container](/fam-container.md)
     * [Campo de texto](/fam-text-input.md)
+    * [Icons](/fam-icon.md)
     * [CheckBox](/fam-check-box.md)
