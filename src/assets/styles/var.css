@@ -136,4 +136,11 @@
   --text-input-valid-background: #011111;
   --text-input-valid-border-color: #05413d;
   --text-input-valid-text-color: #14877f;
+
+  /* Card */
+  --fam-card-border-radius: var(--border-primary);
+  --fam-card-border-width: 1px;
+  --fam-card-border-style: solid;
+  --fam-card-border-color: var(--black-3);
+  --fam-card-background: var(--black-1);
 }
