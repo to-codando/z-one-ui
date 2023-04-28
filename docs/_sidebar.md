@@ -10,4 +10,5 @@
     * [Container](/fam-container.md)
     * [Campo de texto](/fam-text-input.md)
     * [Icons](/fam-icon.md)
+    * [Card](/fam-card.md)
     * [CheckBox](/fam-check-box.md)
