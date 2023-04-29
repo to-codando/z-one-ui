@@ -1,18 +1,14 @@
-import { createApp, html, render, router } from "iares";
-import { environment } from "env";
+import "@/assets/styles/main.css";
 
-import { routes } from "./routes";
-import { AppMain } from "@/components/AppMain";
-
-export const appHost = createApp({
-  onMount(context, props) {
-    render(html`<${AppMain} />`);
-    router({ routes, context }).init();
-  },
-});
-
-if (environment === "development") {
-  new EventSource("esbuild").addEventListener("change", () => {
-    window.location.reload();
-  });
-}
+export { FamAvatar } from "@/components/FamAvatar";
+export { FamButton } from "@/components/FamButton";
+export { FamCard } from "@/components/FamCard";
+export { FamCheckBox } from "@/components/FamCheckBox";
+export { FamContainer } from "@/components/FamContainer";
+export { FamDivider } from "@/components/FamDivider";
+export { FamIcon } from "@/components/FamIcon";
+export { FamImage } from "@/components/FamImage";
+export { FamTagline } from "@/components/FamTagline";
+export { FamTextInput } from "@/components/FamTextInput";
+export { FamTitle } from "@/components/FamTitle";
+export { FamTooltip } from "@/components/FamTooltip";

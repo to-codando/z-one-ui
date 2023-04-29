@@ -24,7 +24,7 @@ export const createHooks = (actions: Actions) => {
     const nameError = actions.validate(iconName || "") as TError;
     const sizeError = actions.validate(hasValidSize || "") as TError;
 
-    if (!nameError && !sizeError) return;
+    if (!(nameError && sizeError)) return;
 
     actions.throwError(nameError || sizeError);
   };

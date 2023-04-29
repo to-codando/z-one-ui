@@ -19,9 +19,9 @@ export const FamAvatar = ({ props }: Pick<Params, "props">) => {
 };
 
 const styles = () => css`
-  fam-image { width: 100%; }
+  fam-avatar { width: 100%; } 
 
-  fam-image,
+  fam-avatar,
   .wrap-ctx > img {
     display: flex;
     justify-content: center;

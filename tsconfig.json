@@ -12,7 +12,7 @@
       "@/mock/*": ["mock/*"],
     },
     "strict":true,
-    "esModuleInterop": false,
+    "esModuleInterop": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
@@ -24,6 +24,19 @@
     "outDir": "./dist",
     "sourceMap": true,
     "inlineSources": true,
-  }
+
+    "allowJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+    
+    "typeRoots": ["./node_modules/@types"],
+    "types": [
+      "node",
+      "mocha",
+      "chai"
+    ],    
+  },
+  "include": ["src/**/*"],
   
 }
