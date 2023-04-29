@@ -1,40 +1,37 @@
 {
-  "name": "my-app-name",
-  "version": "1.0.0",
-  "author": "",
-  "description": "",
+  "name": "fam-code-ui",
+  "version": "0.0.1",
+  "author": "Rodrigo Rocha",
+  "description": "Reactive component IARES UI library",
   "keywords": [],
-  "license": "ISC",
-  "main": "dist/main.js",
+  "license": "MIT",
   "type": "module",
+  "types": "dist/main.d.ts",
+  "main": "dist/main.js",
+  "files": ["/dist"],
   "scripts": {
     "clear": "shx rm -rf ./dist ./coverage",
     "clear:coverage": "shx rm -rf ./coverage",
     "clear:dist": "shx rm -rf ./dist",
     "lint": "rome format ./src --write && rome check ./src --verbose",
-    "build": "cross-env NODE_ENV=production && pnpm clear && node ./build.production.js && pnpm run start:prod",
-    "dev": "cross-env NODE_ENV=development && pnpm start:dev",
-    "test": "pnpm run clear:dist && node ./build.spec.coverage.js && mocha ./dist/**/*.spec.js",
-    "test:watch": "pnpm run test && pnpm run test:watcher",
-    "test:coverage": "pnpm run coverage:build && c8 --reporter=text --reporter=lcov  mocha  ./dist/**/*.spec.js",
-    "coverage:build": "pnpm clear:coverage && node ./build.spec.coverage.js",
-    "start:dev": "node ./build.development.js && pnpm run lint",
-    "start:prod": "cd ./dist && npx http-server",
-    "api:mock": "json-server --watch api/db.json",
-    "test:watcher": "run-when-changed --watch './dist/**/*.js' --exec 'mocha  ./dist/**/*.spec.js %s'",
-    "doc": "npx http-server ./docs --port 4000"
+    "build": "cross-env NODE_ENV=production && pnpm clear && node ./build.production.js && tsc -p ./tsconfig.json",
+    "dev": "cross-env NODE_ENV=development && pnpm start:dev && pnpm test:watcher",
+    "test": "mocha ./dist/**/*.spec.js",
+    "test:coverage": "pnpm run build:test && c8 --reporter=text --reporter=lcov  pnpm test",
+    "build:test": "pnpm clear:coverage && node ./build.spec.coverage.js",
+    "start:dev": "pnpm run lint && pnpm run build:dev && pnpm test",
+    "build:dev": "cross-env NODE_ENV=development && pnpm clear && node ./build.spec.coverage.js",
+    "test:watcher": "run-when-changed --watch './src/**/*.*' --exec 'pnpm run start:dev '",
+    "doc": "npx http-server ./docs -p 4000"
   },
   "aliases": {
-    "@/store": ["./dist/store/index.ts"],
     "@/components/*": ["./dist/components"],
-    "@/utils/*": ["./dist/utils"],
     "@/services/*": ["./dist/services"],
+    "@/utils/*": ["./dist/utils"],
     "@/assets/*": ["./dist/assets"],
     "@/mock/*": ["./dist/mock"]
   },
-  "nyc": {
-    "extension": [".ts"]
-  },
+
   "devDependencies": {
     "@esm-bundle/chai": "4.3.4-fix.0",
     "@microsoft/fetch-event-source": "^2.0.1",
@@ -52,10 +49,8 @@
     "esbuild-plugin-path-alias": "^1.0.7",
     "glob": "^9.2.1",
     "global-jsdom": "^8.8.0",
-    "http-server": "^14.1.1",
     "install-peerdeps": "^3.0.3",
     "jsdom": "^21.1.1",
-    "json-server": "^0.17.1",
     "mocha": "^10.2.0",
     "module-alias": "^2.2.2",
     "rome": "^11.0.0",
@@ -66,6 +61,10 @@
   },
   "dependencies": {
     "htm": "^3.1.1",
-    "iares": "1.1.3"
+    "iares": "^1.1.3"
+  },
+  "peerDependencies": {
+    "htm": "^3.1.1",
+    "iares": "^1.1.3"
   }
 }
