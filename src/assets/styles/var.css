@@ -138,9 +138,24 @@
   --text-input-valid-text-color: #14877f;
 
   /* Card */
+
   --fam-card-border-radius: var(--border-primary);
   --fam-card-border-width: 1px;
   --fam-card-border-style: solid;
   --fam-card-border-color: var(--black-3);
   --fam-card-background: var(--black-1);
+
+  /* List */
+
+  --fam-list-display: flex;
+  --fam-list-justify-content: flex-start;
+  --fam-list-align-items: flex-start;
+  --fam-list-width: 100%;
+  --fam-list-flex-wrap: wrap;
+  --fam-list-padding: 2em;
+  --fam-list-color: var(--white-3);
+  --fam-list-border-radius: none;
+  --fam-list-border-width: none;
+  --fam-list-border-style: none;
+  --fam-list-border-color: transparent;
 }
