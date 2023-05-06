@@ -11,4 +11,5 @@
     * [Campo de texto](/fam-text-input.md)
     * [Icons](/fam-icon.md)
     * [Card](/fam-card.md)
+    * [List](/fam-list.md)
     * [CheckBox](/fam-check-box.md)
