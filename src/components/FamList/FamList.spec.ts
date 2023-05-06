@@ -5,7 +5,7 @@ import { expect } from "@esm-bundle/chai";
 
 import { FamList } from "@/components/FamList";
 
-describe.only("FamList", () => {
+describe("FamList", () => {
   let cleanup: { (): void };
   let component = FamList();
 
