@@ -6,19 +6,19 @@ import { render, html } from "iares";
 import { FamCard } from "@/components/FamCard";
 
 describe("AppTitle", () => {
-  let cleanup: { (): void };
-  let component = FamCard();
+	let cleanup: { (): void };
+	let component = FamCard();
 
-  before(() => {
-    cleanup = globalJsdom();
-    component = FamCard();
-  });
+	before(() => {
+		cleanup = globalJsdom();
+		component = FamCard();
+	});
 
-  after(() => {
-    cleanup();
-  });
+	after(() => {
+		cleanup();
+	});
 
-  it("Should have template and style defined", () => {
-    expect(component).to.have.all.keys(["template", "styles"]);
-  });
+	it("Should have template and style defined", () => {
+		expect(component).to.have.all.keys(["template", "styles"]);
+	});
 });

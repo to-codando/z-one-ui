@@ -5,7 +5,7 @@ import { validatorFactory } from "@/services/validator";
 
 const template = ({ props }: templateParams) => html`
   <div class="wrap-ctx size-${props.size}">
-     <span class="material-symbols-outlined">
+     <span class="material-symbols-rounded">
         ${props.name}
      </span>
   </div>

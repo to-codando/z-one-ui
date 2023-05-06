@@ -6,22 +6,22 @@ import { expect } from "@esm-bundle/chai";
 import { FamButton } from "@/components/FamButton";
 
 describe("FamButton", () => {
-  let cleanup: { (): void };
+	let cleanup: { (): void };
 
-  before(() => {
-    cleanup = globalJsdom();
-  });
+	before(() => {
+		cleanup = globalJsdom();
+	});
 
-  after(() => {
-    cleanup();
-  });
+	after(() => {
+		cleanup();
+	});
 
-  it("Should ensure that the component has the correct properties", () => {
-    expect(FamButton()).to.have.all.keys(["template", "styles"]);
-  });
+	it("Should ensure that the component has the correct properties", () => {
+		expect(FamButton()).to.have.all.keys(["template", "styles"]);
+	});
 
-  it("Should render button content correctly", () => {
-    render(html`
+	it("Should render button content correctly", () => {
+		render(html`
        <${FamButton}>
           <slot target="content">
             <span type="primary-disabled">
@@ -30,7 +30,7 @@ describe("FamButton", () => {
           </slot>
         </>
     `);
-    const element = document.querySelector("fam-button");
-    expect(element?.firstChild?.textContent).to.equal("Salvar");
-  });
+		const element = document.querySelector("fam-button");
+		expect(element?.firstChild?.textContent).to.equal("Salvar");
+	});
 });

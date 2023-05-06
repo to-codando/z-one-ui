@@ -7,10 +7,10 @@ const template = () => html`
 `;
 
 export const AppHello = () => {
-  return {
-    template,
-    styles,
-  };
+	return {
+		template,
+		styles,
+	};
 };
 
 const styles = () => css`

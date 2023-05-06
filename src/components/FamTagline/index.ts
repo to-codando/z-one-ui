@@ -14,19 +14,21 @@ export const FamTagline = () => {
 };
 
 const styles = () => css`
-  fam-tagline { width: 100%; }
-
   fam-tagline,
+  .wrap-ctx,
   .wrap-ctx p
   {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--black-2);
+    width: 100%;
   }
-
+  
   .wrap-ctx p {
-    font-size: --text-size-2
+    font-size: var(--fam-tagline-font-size);
+    font-weight: var(--fam-tagline-font-weight);
+    color: var(--fam-tagline-color);
+    line-height: var(--fam-tagline-line-height);
   }
 
   

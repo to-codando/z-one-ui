@@ -13,35 +13,40 @@ export const FamButton = () => {
 
 const styles = () => css`
   fam-button {
-    width:100%;
-    height:50px;
     display:flex;
-    margin:1em 1em;
-    text-transform: uppercase;
+    width:var(--fam-button-width);
+    height:var(--fam-button-height);
+    text-transform: var(--fam-button-text-transform);
+    cursor: pointer
   }
 
-  fam-button > *{
-    width:100%;
-    height:50px;
+  fam-button > * {
     display:flex;
-    justify-content: center;
-    align-items: center;
+   width:var(--fam-button-width);
+    height:var(--fam-button-height);
+    justify-content: var(--fam-button-justify-content);
+    align-items: var(--fam-button-align-items);
+    font-weight: var(--fam-button-font-weight)
   }
 
   fam-button *[type="primary"] {
-    font-size:var(--text-secondary);
-    border-radius: var(--border-primary);
-    color: var(--primary-soft-light);
-    background: var(--primary);
-    border:2px solid var(--primary-dark-strong)   
+    font-size:var(--fam-button-font-size);
+    border-radius: var(--fam-button-border-radius);
+    color: var(--fam-buttom-primary-color);
+    background: var(--fam-buttom-primary-background);
+    border-width: var(--fam-buttom-border-width);  
+    border-style: var(--fam-buttom-border-style);  
+    border-color: var(--fam-buttom-primary-border-color); 
   }
 
   fam-button *[type="primary-hole"] {
-    font-size:var(--text-secondary);
-    border-radius: var(--border-primary);
-    color: var(--primary);
-    background:none;
-    border:2px solid var(--primary)   
+    font-size:var(--fam-button-font-size);
+    border-radius: var(--fam-button-border-radius);
+    color: var(--fam-buttom-primary-hole-color);
+    background:var(--fam-buttom-primary-hole-background);
+    border-width: var(--fam-buttom-border-width);  
+    border-style: var(--fam-buttom-border-style);  
+    border-color: var(--fam-buttom-primary-hole-border-color);  
   }
 
   fam-button *[type="primary-disabled"] {

@@ -1,24 +1,24 @@
 import { HtmlInputEvent } from "./types";
 
 export type Thandler = {
-  (args: HtmlInputEvent): void;
+	(args: HtmlInputEvent): void;
 };
 
 export type Handler = {
-  (args: HtmlInputEvent): void;
+	(args: HtmlInputEvent): void;
 };
 
 export type Tdebounc = {
-  (callback: Thandler | Handler, delay?: number): Thandler;
+	(callback: Thandler | Handler, delay?: number): Thandler;
 };
 
 export const debounce: Tdebounc = (callback, delay = 500) => {
-  let timer!: NodeJS.Timeout;
+	let timer!: NodeJS.Timeout;
 
-  return (args) => {
-    clearTimeout(timer);
-    timer = setTimeout(() => {
-      callback(args);
-    }, delay);
-  };
+	return (args) => {
+		clearTimeout(timer);
+		timer = setTimeout(() => {
+			callback(args);
+		}, delay);
+	};
 };

@@ -3,8 +3,8 @@ import { debounce } from "@/utils/debounce";
 import { ErrorInputParams, Params } from "./types";
 
 const FamInputError = ({ props }: ErrorInputParams) => {
-  if (props.isValid) return html``;
-  return html`<p>${props.error}</p>`;
+	if (props.isValid) return html``;
+	return html`<p>${props.error}</p>`;
 };
 
 const template = ({ props }: Params) => html`
@@ -25,10 +25,10 @@ const template = ({ props }: Params) => html`
 `;
 
 export const FamTextInput = () => {
-  return {
-    template,
-    styles,
-  };
+	return {
+		template,
+		styles,
+	};
 };
 
 const styles = () => css`

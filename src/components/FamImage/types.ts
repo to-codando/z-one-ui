@@ -1,14 +1,14 @@
 export type Props = {
-  fallbackSrc: string;
-  src: string;
-  alt: string;
+	fallbackSrc: string;
+	src: string;
+	alt: string;
 };
 
 export type Actions = {
-  setFallbackImage: () => void;
+	setFallbackImage: () => void;
 };
 
 export type Params = {
-  actions: Actions;
-  props: Props;
+	actions: Actions;
+	props: Props;
 };

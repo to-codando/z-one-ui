@@ -6,38 +6,38 @@ import { render, html } from "iares";
 import { FamTitle } from "@/components/FamTitle";
 
 describe("AppTitle", () => {
-  let cleanup: { (): void };
-  let component = FamTitle();
+	let cleanup: { (): void };
+	let component = FamTitle();
 
-  before(() => {
-    cleanup = globalJsdom();
-    component = FamTitle();
-  });
+	before(() => {
+		cleanup = globalJsdom();
+		component = FamTitle();
+	});
 
-  after(() => {
-    cleanup();
-  });
+	after(() => {
+		cleanup();
+	});
 
-  it("Should have template and style defined", () => {
-    expect(component).to.have.all.keys(["template", "styles"]);
-  });
+	it("Should have template and style defined", () => {
+		expect(component).to.have.all.keys(["template", "styles"]);
+	});
 
-  it("Should correctly render title text", () => {
-    const title = "Title";
-    let componentElement: HTMLElement | null = null;
+	it("Should correctly render title text", () => {
+		const title = "Title";
+		let componentElement: HTMLElement | null = null;
 
-    render(
-      html`
+		render(
+			html`
     <${FamTitle}>
       <slot target="content">
         <h1>${title}</h1>
       </slot>
     </>
     `,
-      document?.body,
-    );
+			document?.body,
+		);
 
-    componentElement = document?.body?.querySelector("fam-title");
-    expect(componentElement?.textContent?.trim()).to.be.eql(title);
-  });
+		componentElement = document?.body?.querySelector("fam-title");
+		expect(componentElement?.textContent?.trim()).to.be.eql(title);
+	});
 });

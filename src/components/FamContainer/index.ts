@@ -19,6 +19,7 @@ const styles = () => css`
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
     width: 100%;
     
     max-width: var(--fam-container-max-width);

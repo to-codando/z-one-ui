@@ -22,9 +22,9 @@ const styles = () => css`
   .wrap-ctx h3
   {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--black-1);
+    justify-content: var(--title-justify-content);
+    align-items: var(--title-align-items);
+    color: var(--title-color);
   }
 
   
@@ -33,20 +33,22 @@ const styles = () => css`
   .wrap-ctx h3 {
     width:100%;
     padding: 1em;
+    text-align: var(--title-text-align);
   }  
   
   .wrap-ctx h1 {
-    font-size: var(--title-primary);
-    font-weight: 200
+    font-size: var(--title-font-size-primary);
+    font-weight: var(--title-font-weight-primary);
   }
   
   .wrap-ctx h2 {
-    font-size: var(--title-secondary);
+    font-size: var(--title-font-size-secondary);
+    font-weight: var(--title-font-weight-secondary);
   }
   
   .wrap-ctx h3 {
-    font-size: var(--title-size-4);
-    font-weight: 600;
+    font-size: var(--title-font-size-tertiary);
+    font-weight: var(--title-font-weight-tertiary);
   }
 
 

@@ -4,18 +4,20 @@ import { Params } from "./types";
 
 const template = ({ props, actions }: Params) => html`
   <div class="wrap-ctx">
-    <img src=${props?.src}  alt=${props?.alt} onerror=${actions.setFallbackImage} class="size-${props?.size || 1}-ctx"/>
+    <img src=${props?.src}  alt=${props?.alt} onerror=${
+	actions.setFallbackImage
+} class="size-${props?.size || 1}-ctx"/>
   </div>
 `;
 
 export const FamAvatar = ({ props }: Pick<Params, "props">) => {
-  const actions = createActions({ props });
-  return {
-    actions,
-    template,
-    styles,
-    props,
-  };
+	const actions = createActions({ props });
+	return {
+		actions,
+		template,
+		styles,
+		props,
+	};
 };
 
 const styles = () => css`

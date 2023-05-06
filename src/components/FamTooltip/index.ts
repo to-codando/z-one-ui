@@ -12,10 +12,10 @@ const template = () => html`
 `;
 
 export const FamTooltip = () => {
-  return {
-    template,
-    styles,
-  };
+	return {
+		template,
+		styles,
+	};
 };
 
 const styles = () => css`

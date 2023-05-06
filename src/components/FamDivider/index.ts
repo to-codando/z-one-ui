@@ -9,14 +9,14 @@ const template = ({ props }: templateParams) => html`
 `;
 
 export const FamDivider = () => {
-  const actions = createActions();
-  const hooks = createHooks(actions);
-  return {
-    template,
-    styles,
-    actions,
-    hooks,
-  };
+	const actions = createActions();
+	const hooks = createHooks(actions);
+	return {
+		template,
+		styles,
+		actions,
+		hooks,
+	};
 };
 
 const styles = () => css`

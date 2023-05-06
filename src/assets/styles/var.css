@@ -68,9 +68,26 @@
 
   /*Title*/
 
-  --title-primary: var(--text-size-5);
-  --title-secondary: calc(var(--text-size-5) - 0.75em);
-  --title-tertiary: var(--title-size-3);
+  --title-font-size-primary: var(--text-size-5);
+  --title-font-weight-primary: bold;
+
+  --title-font-size-secondary: calc(var(--text-size-5) - 0.75em);
+  --title-font-weight-secondary: 500;
+
+  --title-font-size-tertiary: var(--title-size-3);
+  --title-font-weight-tertiary: 500;
+
+  --title-justify-content: center;
+  --title-align-items: center;
+  --title-text-align: center;
+
+  --title-color: #fff;
+
+  /*TAGLINE */
+  --fam-tagline-color: #7a90ba;
+  --fam-tagline-font-size: 1.2em;
+  --fam-tagline-font-weight: 500;
+  --fam-tagline-line-height: 1.4em;
 
   /*Paragraph*/
 
@@ -143,4 +160,24 @@
   --fam-card-border-style: solid;
   --fam-card-border-color: var(--black-3);
   --fam-card-background: var(--black-1);
+
+  /* Button */
+
+  --fam-button-text-transform: capitalize;
+  --fam-button-width: 100%;
+  --fam-button-height: 50px;
+  --fam-button-justify-content: center;
+  --fam-button-align-items: center;
+  --fam-button-font-weight: 600;
+
+  --fam-button-font-size: 1em;
+  --fam-button-border-radius: 8px;
+  --fam-buttom-primary-color: var(--text-input-valid-text-color);
+  --fam-buttom-primary-background: var(--green-3);
+  --fam-buttom-border-width: 1px;
+  --fam-buttom-border-style: solid;
+  --fam-buttom-primary-border-color: var(--text-input-valid-text-color);
+  --fam-buttom-primary-hole-color: var(--text-input-valid-text-color);
+  --fam-buttom-primary-hole-background: none;
+  --fam-buttom-primary-hole-border-color: var(--text-input-valid-text-color);
 }

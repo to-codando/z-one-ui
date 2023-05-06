@@ -9,13 +9,13 @@ const template = ({ props, actions }: Params) => html`
 `;
 
 export const FamImage = ({ props }: Pick<Params, "props">) => {
-  const actions = createActions({ props });
-  return {
-    actions,
-    template,
-    styles,
-    props,
-  };
+	const actions = createActions({ props });
+	return {
+		actions,
+		template,
+		styles,
+		props,
+	};
 };
 
 const styles = () => css`

@@ -2,35 +2,35 @@ import { PropsType } from "@/utils/types";
 import { html, css } from "iares";
 
 type HtmlInputEvent = Event & {
-  target: HTMLInputElement;
+	target: HTMLInputElement;
 };
 
 type Props = {
-  props: {
-    label: string;
-    isChecked: boolean;
-    handler: (event: HtmlInputEvent) => void;
-  };
+	props: {
+		label: string;
+		isChecked: boolean;
+		handler: (event: HtmlInputEvent) => void;
+	};
 };
 
 const template = ({ props }: Props) => html`
   <div class="wrap-ctx">
     <label>
     ${
-      props.isChecked
-        ? html`<input type="checkbox" onChange=${props.handler} checked="${props.isChecked}"/>`
-        : html`<input type="checkbox" onChange=${props.handler} />`
-    }
+			props.isChecked
+				? html`<input type="checkbox" onChange=${props.handler} checked="${props.isChecked}"/>`
+				: html`<input type="checkbox" onChange=${props.handler} />`
+		}
       <span>${props.label}</span>
     </label>
   </div>
 `;
 
 export const FamCheckBox = () => {
-  return {
-    template,
-    styles,
-  };
+	return {
+		template,
+		styles,
+	};
 };
 
 const styles = () => css`

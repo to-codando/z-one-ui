@@ -8,10 +8,10 @@ export const template = () => html`
 `;
 
 export const AppDefault = () => {
-  return {
-    template,
-    styles,
-  };
+	return {
+		template,
+		styles,
+	};
 };
 
 const styles = () => css`
