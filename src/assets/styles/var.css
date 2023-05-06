@@ -155,6 +155,7 @@
   --text-input-valid-text-color: #14877f;
 
   /* Card */
+
   --fam-card-border-radius: var(--border-primary);
   --fam-card-border-width: 1px;
   --fam-card-border-style: solid;
@@ -180,4 +181,18 @@
   --fam-buttom-primary-hole-color: var(--text-input-valid-text-color);
   --fam-buttom-primary-hole-background: none;
   --fam-buttom-primary-hole-border-color: var(--text-input-valid-text-color);
+
+  /* List */
+
+  --fam-list-display: flex;
+  --fam-list-justify-content: flex-start;
+  --fam-list-align-items: flex-start;
+  --fam-list-width: 100%;
+  --fam-list-flex-wrap: wrap;
+  --fam-list-padding: 2em;
+  --fam-list-color: var(--white-3);
+  --fam-list-border-radius: none;
+  --fam-list-border-width: none;
+  --fam-list-border-style: none;
+  --fam-list-border-color: transparent;
 }
