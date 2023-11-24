@@ -27,22 +27,25 @@ const styles = () => css`
   }
 
   fam-divider > [type=dashed]{
-    border: 1px dashed #fff
+    border: 1px dashed var(--fam-divider-color)
   }
 
   fam-divider > [type=dotted]{
-    border: 1px dotted #fff
+    border: 1px dotted var(--fam-divider-color)
   }
 
   fam-divider > [type=solid]{
-    border: 1px solid #fff
+    border: 1px solid var(--fam-divider-color)
   }
 
   fam-divider > [type=rounded]{
-    border: 1px solid #fff;
+    border: 1px solid var(--fam-divider-color);
     border-radius:5px
   }
 
+  fam-divider > [stroke=size-1]{
+    border-width:1px
+  }
   fam-divider > [stroke=size-2]{
     border-width:2px
   }

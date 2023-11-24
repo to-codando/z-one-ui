@@ -195,4 +195,8 @@
   --fam-list-border-width: none;
   --fam-list-border-style: none;
   --fam-list-border-color: transparent;
+
+  /*Divider*/
+
+  --fam-divider-color: #fff;
 }
