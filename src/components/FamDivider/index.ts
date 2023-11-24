@@ -27,56 +27,56 @@ const styles = () => css`
   }
 
   fam-divider > [type=dashed]{
-    border: 1px dashed var(--fam-divider-color)
+    border-top: 1px dashed var(--fam-divider-color)
   }
 
   fam-divider > [type=dotted]{
-    border: 1px dotted var(--fam-divider-color)
+    border-top: 1px dotted var(--fam-divider-color)
   }
 
   fam-divider > [type=solid]{
-    border: 1px solid var(--fam-divider-color)
+    border-top: 1px solid var(--fam-divider-color)
   }
 
   fam-divider > [type=rounded]{
-    border: 1px solid var(--fam-divider-color);
-    border-radius:5px
+    border-top: 1px solid var(--fam-divider-color);
+    border-radius:100%
   }
 
   fam-divider > [stroke=size-1]{
-    border-width:1px
+    border-top-width:1px;
   }
   fam-divider > [stroke=size-2]{
-    border-width:2px
+    border-top-width:2px
   }
   fam-divider > [stroke=size-3]{
-    border-width:3px
+    border-top-width:3px
   }
   fam-divider > [stroke=size-4]{
-    border-width:4px
+    border-top-width:4px
   }
   fam-divider > [stroke=size-5]{
-    border-width:5px
+    border-top-width:5px
   }
   fam-divider > [stroke=size-6]{
-    border-width:6px
+    border-top-width:6px
   }
   fam-divider > [stroke=size-7]{
-    border-width:7px
+    border-top-width:7px
   }
   fam-divider > [stroke=size-8]{
-    border-width:8px
+    border-top-width:8px
   }
   fam-divider > [stroke=size-9]{
-    border-width:9px
+    border-top-width:9px
   }
   fam-divider > [stroke=size-10]{
-    border-width:10px
+    border-top-width:10px
   }
   fam-divider > [type=size-11]{
-    border-width:11px
+    border-top-width:11px
   }
   fam-divider > [type=size-12]{
-    border-width:12px
+    border-top-width:12px
   }
  `;
