@@ -10,10 +10,10 @@ const template = ({ props }: ListParams) => html`
 `;
 
 export const FamList = () => {
-  return {
-    template,
-    styles,
-  };
+	return {
+		template,
+		styles,
+	};
 };
 
 const styles = () => css`

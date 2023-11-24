@@ -1,5 +1,5 @@
 export type ListParams = {
-  props: {
-    data: string[];
-  };
+	props: {
+		data: string[];
+	};
 };

@@ -5,10 +5,10 @@ const template = () => html`
 `;
 
 export const FamButton = () => {
-  return {
-    template,
-    styles,
-  };
+	return {
+		template,
+		styles,
+	};
 };
 
 const styles = () => css`
