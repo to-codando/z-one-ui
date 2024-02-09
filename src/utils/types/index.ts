@@ -2,7 +2,7 @@ import { HTMType, TState } from "iares";
 
 export interface Props extends Object {}
 export type TemplateType<T extends Props> = {
-	(params: T): HTMType | HTMType[];
+  (params: T): HTMType | HTMType[];
 };
 export type PropsType<T extends Props> = T;
 export type ParamsType<T> = { params: T };

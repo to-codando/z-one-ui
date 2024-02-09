@@ -12,7 +12,7 @@
     "start:prod": "pnpm build:prod",
     "start:coverage":"pnpm build:coverage && pnpm coverage",
     "start:test": "pnpm build:coverage && pnpm test && pnpm test:watcher",
-    "test:watcher":"pnpm run-when-changed --watch './dist/**/*.js' --exec 'mocha  ./dist/tests/**/*.spec.js %s'",
+    "test:watcher":"pnpm run-when-changed --watch './dist/**/*.js' --exec 'mocha  ./dist/**/*.spec.js %s'",
     "clear": "shx rm -rf ./dist ./coverage",
     "test":"mocha ./dist/**/*.spec.js",
     "lint": "biome check --apply ./src",
@@ -20,7 +20,7 @@
     "build:prod": "pnpm clear && pnpm lint && node --env-file=.env.production build.js && pnpm serve ./dist",
     "build:dev": "pnpm clear  && pnpm lint && node --env-file=.env.development build.js",
     "build:coverage": "pnpm clear && node --env-file=.env.spec.coverage build.js",
-    "coverage":"c8 --reporter=text --reporter=lcov  mocha  ./dist/tests/**",
+    "coverage":"c8 --reporter=text --reporter=lcov  mocha  ./dist/**/*.spec.js",
     "api:mock": "json-server --watch api/db.json"
   },
   "aliases": {

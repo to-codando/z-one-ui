@@ -25,7 +25,10 @@ describe("FamImage", () => {
   });
 
   afterEach(() => {
-    document.querySelectorAll("fam-image").forEach((famImage) => famImage.remove());
+    const components = document.querySelectorAll("fam-image");
+    for (const element of components) {
+      element.remove();
+    }
   });
 
   it("Should have template, styles, action and props", () => {
