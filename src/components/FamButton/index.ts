@@ -1,4 +1,4 @@
-import { html, css } from "iares";
+import { css, html } from "iares";
 
 const template = () => html`
   <slot id="content"></slot>

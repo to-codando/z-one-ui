@@ -1,4 +1,4 @@
-import { html, css } from "iares";
+import { css, html } from "iares";
 import { createActions } from "./actions";
 import { Params } from "./types";
 

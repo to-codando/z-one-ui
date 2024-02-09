@@ -1,7 +1,7 @@
-import globalJsdom from "global-jsdom";
 // import * as sinon from "sinon";
 import { expect } from "@esm-bundle/chai";
-import { render, html } from "iares";
+import globalJsdom from "global-jsdom";
+import { html, render } from "iares";
 
 import { FamTagline } from "@/components/FamTagline";
 
